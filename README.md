@@ -3,7 +3,7 @@
 **Structural Field Theory (SFT)** proposes that *all physical observables emerge from a single phenomenon: the microscopic tensile distortion of S*.  
 We use a structural scalar field as a minimal descriptor (a map, not the territory) to simulate, calibrate, and validate the program with reproducible runners (JSON + SHA-256 manifests).
 
-> **Start here:** read **[Doc 0 — Abstract & Orientation](./0_SFT_Document0_Abstract_and_Orientation_UPDATED_with_10to14.pdf)** for the ontological stance, scope, current limitations, and falsifiable predictions.
+> **Start here:** read **[Doc 0 — Abstract & Orientation](.0_SFT_Document0_Abstract_and_Orientation_UPDATED_with_10to14.pdf)** for the ontological stance, scope, current limitations, and falsifiable predictions.
 
 ---
 
