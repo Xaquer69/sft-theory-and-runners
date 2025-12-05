@@ -48,4 +48,4 @@ Distributed under the **MIT License**. See the [LICENSE](./LICENSE) file.
 
 **Francisco Queral Rallo**  
 Murcia, España  
-✉ **xaviqueral@gmail.com**
+✉ **franciscoqueralrallo@uoc-cs.com**
