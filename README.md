@@ -1,47 +1,164 @@
-# sft-theory-and-runners
+# SFT — Structural Field Theory (Docs + Runners)
 
-**Structural Field Theory (SFT)** proposes that *all physical observables emerge from a single phenomenon: the microscopic tensile distortion of S*.  
-We use a structural scalar field as a minimal descriptor (a map, not the territory) to simulate, calibrate, and validate the program with reproducible runners (JSON + SHA-256 manifests).
+This repository is a **verification-first** release of SFT: a theory/framework plus a set of **runners** designed for **external audit**.  
+The key idea is simple:
 
 > **Start here:** read **[Doc 0 — Abstract & Orientation](0_SFT_Document0_Abstract_and_Orientation_UPDATED_with_10to14.pdf)** for the ontological stance, scope, current limitations, and falsifiable predictions.
 
----
+- The “vacuum” is treated as a **structural medium/field**.
+- “Particles” are **stable field configurations** (discrete in manifestation, continuous in availability).
+- The project is organized so third parties can **verify pipelines** via **PASS/FAIL gates**, **hash manifests**, and **schema-validated artifacts**.
 
-## Repository layout
-
-- `Doc_01` … `Doc_14/` — themed subfolders; each contains its document and, when applicable, a matching runner.
-- Root contains:
-  - `0_SFT_Document0_Abstract_and_Orientation_UPDATED_with_10to14.pdf`
-  - `README.md`
-  - `LICENSE` (MIT)
-
-Runner outputs are designed to be **reproducible** and include:
-- Compact JSON with `schema_version`, criteria/thresholds, random seeds, and verdicts.
-- `checksums_SHA256.txt` with a self-hash of the manifest.
+> Important: many included datasets are **synthetic (C)** because this release is built to be verified on **CPU-only**.  
+> Physical end-to-end confirmation requires **REAL solver runs (P)**, which this repo is designed to accept as external inputs.
 
 ---
 
-## Quick run (example)
+## Quickstart (3 minutes)
 
+### 1) Setup
 ```bash
-# Example (adjust paths/names)
-python runners/leptons/particles_sft_full_scan_runner.py leptons \
-  --input data/leptons_real.csv \
-  --out out/LEPTON_REPORT.json \
-  --perm 2000 \
-  --jitter 300 \
-  --manifest
-## Calibration vs prediction
+git clone https://github.com/Xaquer69/sft-theory-and-runners
+cd sft-theory-and-runners
 
-We follow an **α-in** discipline (α provided as an input for calibration).  
-Figures/tables across the corpus are explicitly labeled:
+python -m venv .venv
+source .venv/bin/activate   # Windows: .venv\Scripts\activate
 
-- **(C) calibrated** — quantities fitted or normalized using α-in (or analogous anchors).
-- **(P) prediction** — out-of-sample and falsifiable.
+pip install -r requirements.txt
 
-See **Doc 0** for motivation and cross-reading guidance.
 
-## License
+
+2) Run one demo runner
+
+Pick one of the “packs” below (recommended: DoubleSlit or Spin) and run its verify script.
+
+Example pattern (adjust the path to the pack you choose):
+cd <PATH_TO_A_PACK>
+sha256sum -c checksums_SHA256.txt
+python3 verify_*.py
+
+If the verifier ends with GLOBAL_PASS = true, you successfully validated that pipeline.
+
+Recommended verification path (in order)
+
+CI / convergence sanity (C)
+Run the EOC/CI synthetic check to verify your environment and regression gates.
+
+One physics-style demo with PASS/FAIL (C)
+Run either:
+
+Double-slit demo (phase slope + visibility gates), or
+
+Spin-½ demo (FR sign flip + rotor spectrum fit gates).
+
+External Review Pack (C)
+Run the “external review pack” to validate:
+
+SCAN → REGION → REPORT artifacts,
+
+JSON schema compliance,
+
+and manifests/hashes for audit readiness.
+
+Repository structure
+
+Doc_01/ ... Doc_14/
+The full documentation set (each doc in its own folder).
+
+*_CLEANED.zip and runner bundles
+When a document has an executable verification component, the corresponding zipped runner bundle is included.
+
+Schemas/ (if present)
+JSON schemas for standardized artifacts (reports, scans, manifests).
+
+Artifact contract (what “verification” means here)
+
+Most runners produce a standard set of artifacts:
+
+COMPATIBILITY_SCAN_*.json
+A parameter sweep (grid/scan) with per-point metrics.
+
+EXISTENCE_REGION_*.json
+The PASS region extracted from the scan (mask/region geometry + thresholds).
+
+EXISTENCE_REPORT_*.json
+A single verdict + provenance (version, seed, gates, hashes).
+
+Typical verdict labels:
+
+natural — stable without “maintenance”
+
+maintained — stable only under explicit constraints/controls
+
+All packs include:
+
+SHA-256 manifests (checksums_SHA256.txt, etc.)
+
+PASS/FAIL gates with explicit thresholds
+
+(often) JSON schema validation
+
+What is (C) vs (P)?
+
+This repo uses a strict separation:
+
+(C) Convenience / CI / Synthetic
+
+Runs on CPU.
+
+Validates pipelines, regression checks, schemas, and audit trails.
+
+Does not claim physical validation by itself.
+
+(P) Physical / REAL
+
+Requires the real solver outputs (often GPU-scale).
+
+Intended to be run by third parties, then checked with the same verification pipelines.
+
+Minimal requirements
+
+Python 3.10+
+
+CPU-only is sufficient for the (C) packs.
+
+OS: Linux/macOS/Windows should work if Python dependencies install cleanly.
+
+Where to start (most user-friendly packs)
+
+If you only run one thing, run one of these:
+
+DoubleSlit_PACKAGE — verifies phase slope linearity and visibility monotonicity (PASS/FAIL).
+
+Spin / Appendix S pack — verifies FR 2π sign flip and rotor spectrum fit (PASS/FAIL).
+
+External Review Pack — verifies SCAN→REGION→REPORT with schema checks and manifests.
+
+(Each pack contains a README/HOW-TO-RUN plus verify_*.py scripts.)
+
+License
+
+MIT — see LICENSE.
+
+Notes for reviewers
+
+This repository is intentionally organized around external verifiability:
+
+deterministic seeds,
+
+explicit thresholds,
+
+hashes/manifests,
+
+and schema-validated outputs.
+
+If you want to contribute REAL (P) runs, the expected interface is:
+
+produce the same standardized artifacts from your run,
+
+then re-use the existing verifiers to check PASS/FAIL and provenance.
+
+::contentReference[oaicite:0]{index=0}
 
 Distributed under the **MIT License**. See the [LICENSE](./LICENSE) file.
 ## Author & Contact
