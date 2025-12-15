@@ -30,7 +30,7 @@ pip install -r requirements.txt
 
 
 2) Run one demo runner
-Pick one of the “packs” below (recommended: DoubleSlit or Spin) and run its verify script.
+Pick one of the “packs” below (recommended: Spin(Doc.5) or DoubleSlit (Doc.7) ) and run its verify script.
 Example pattern (adjust the path to the pack you choose):
 cd <PATH_TO_A_PACK>
 sha256sum -c checksums_SHA256.txt
