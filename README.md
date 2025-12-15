@@ -26,12 +26,14 @@ python -m venv .venv
 source .venv/bin/activate   # Windows: .venv\Scripts\activate
 
 pip install -r requirements.txt
----
 
-# 2) Run one demo runner
+bash´´´
+
+2) Run one demo runner
 
 Pick one of the “packs” below (recommended: Spin (Doc.5) or DoubleSlit (Doc.7)) and run its verify script.
 
 Example pattern (adjust the path to the pack you choose):
+
 
 
