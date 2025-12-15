@@ -34,11 +34,11 @@ Pick one of the “packs” below (recommended: Spin (Doc.5) or DoubleSlit (Doc.
 
 Example pattern (adjust the path to the pack you choose):
 
+```bash
 cd <PATH_TO_A_PACK>
 sha256sum -c checksums_SHA256.txt
 python3 verify_*.py
-
-
+```
 
 If the verifier ends with GLOBAL_PASS = true, you successfully validated that pipeline.
 
