@@ -49,16 +49,10 @@ Run the EOC/CI synthetic check to verify your environment and regression gates.
 
 One physics-style demo with PASS/FAIL (C)
 Run either:
-
-Double-slit demo (phase slope + visibility gates), or
-
-Spin-½ demo (FR sign flip + rotor spectrum fit gates).
+Double-slit demo (phase slope + visibility gates), or Spin-½ demo (FR sign flip + rotor spectrum fit gates).
 
 External Review Pack (C)
 Run the “external review pack” to validate:
-
 SCAN → REGION → REPORT artifacts,
-
 JSON schema compliance,
-
 and manifests/hashes for audit readiness.
