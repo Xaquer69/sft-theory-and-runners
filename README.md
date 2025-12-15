@@ -142,7 +142,6 @@ hashes/manifests,
 
 and schema-validated outputs.
 
-```md
 If you want to contribute REAL (P) runs, please follow this minimal contract:
 
 - Export **SCAN / REGION / REPORT** artifacts using the same filename patterns used by the pack.
