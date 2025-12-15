@@ -92,3 +92,66 @@ SHA-256 manifests (checksums_SHA256.txt, etc.)
 PASS/FAIL gates with explicit thresholds
 
 (often) JSON schema validation
+
+## What is (C) vs (P)?
+This repo uses a strict separation:
+
+(C) Convenience / CI / Synthetic
+
+Runs on CPU.
+
+Validates pipelines, regression checks, schemas, and audit trails.
+
+Does not claim physical validation by itself.
+
+(P) Physical / REAL
+
+Requires the real solver outputs (often GPU-scale).
+
+Intended to be run by third parties, then checked with the same verification pipelines.
+
+## Minimal requirements
+Python 3.10+
+
+CPU-only is sufficient for the (C) packs.
+
+OS: Linux/macOS/Windows should work if Python dependencies install cleanly.
+
+## Where to start (most user-friendly packs)
+If you only run one thing, run one of these:
+
+DoubleSlit_PACKAGE — verifies phase slope linearity and visibility monotonicity (PASS/FAIL).
+
+Spin / Appendix S pack — verifies FR 2π sign flip and rotor spectrum fit (PASS/FAIL).
+
+External Review Pack — verifies SCAN→REGION→REPORT with schema checks and manifests.
+
+(Each pack contains a README/HOW-TO-RUN plus verify_*.py scripts.)
+
+
+## Notes for reviewers
+
+This repository is intentionally organized around external verifiability:
+
+deterministic seeds,
+
+explicit thresholds,
+
+hashes/manifests,
+
+and schema-validated outputs.
+
+If you want to contribute REAL (P) runs, the expected interface is:
+
+produce the same standardized artifacts from your run,
+
+then re-use the existing verifiers to check PASS/FAIL and provenance.
+
+Distributed under the MIT License. See the LICENSE
+ file.
+
+## Author & Contact
+
+Francisco Queral Rallo
+Murcia, España
+✉ franciscoqueralrallo@uoc-cs.com
