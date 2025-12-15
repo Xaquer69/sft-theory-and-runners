@@ -66,3 +66,29 @@ When a document has an executable verification component, the corresponding zipp
 
 Schemas/ (if present)
 JSON schemas for standardized artifacts (reports, scans, manifests).
+
+## Artifact contract (what “verification” means here)
+Most runners produce a standard set of artifacts:
+
+COMPATIBILITY_SCAN_*.json
+A parameter sweep (grid/scan) with per-point metrics.
+
+EXISTENCE_REGION_*.json
+The PASS region extracted from the scan (mask/region geometry + thresholds).
+
+EXISTENCE_REPORT_*.json
+A single verdict + provenance (version, seed, gates, hashes).
+
+Typical verdict labels:
+
+natural — stable without “maintenance”
+
+maintained — stable only under explicit constraints/controls
+
+All packs include:
+
+SHA-256 manifests (checksums_SHA256.txt, etc.)
+
+PASS/FAIL gates with explicit thresholds
+
+(often) JSON schema validation
