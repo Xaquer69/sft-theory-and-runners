@@ -26,7 +26,7 @@ python -m venv .venv
 source .venv/bin/activate   # Windows: .venv\Scripts\activate
 
 pip install -r requirements.txt
-bash´´´
+```
 
 2) Run one demo runner
 
