@@ -1,10 +1,11 @@
 # SFT — Structural Field Theory (Docs + Runners)
 
 This repository is a **verification-first** release of SFT: a theory/framework plus a set of **runners** designed for **external audit**.  
-The key idea is simple:
+
 
 > **Start here:** read **[Doc 0 — Abstract & Orientation](0_SFT_Document0_Abstract_and_Orientation_UPDATED_with_10to14.pdf)** for the ontological stance, scope, current limitations, and falsifiable predictions.
 
+The key idea is simple:
 - The “vacuum” is treated as a **structural medium/field**.
 - “Particles” are **stable field configurations** (discrete in manifestation, continuous in availability).
 - The project is organized so third parties can **verify pipelines** via **PASS/FAIL gates**, **hash manifests**, and **schema-validated artifacts**.
