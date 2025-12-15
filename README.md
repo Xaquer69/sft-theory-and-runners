@@ -42,7 +42,7 @@ python3 verify_*.py
 
 If the verifier ends with GLOBAL_PASS = true, you successfully validated that pipeline.
 
-Recommended verification path (in order)
+# Recommended verification path (in order)
 
 CI / convergence sanity (C)
 Run the EOC/CI synthetic check to verify your environment and regression gates.
