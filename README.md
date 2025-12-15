@@ -30,136 +30,88 @@ pip install -r requirements.txt
 
 
 2) Run one demo runner
-
 Pick one of the “packs” below (recommended: DoubleSlit or Spin) and run its verify script.
-
 Example pattern (adjust the path to the pack you choose):
 cd <PATH_TO_A_PACK>
 sha256sum -c checksums_SHA256.txt
 python3 verify_*.py
-
 If the verifier ends with GLOBAL_PASS = true, you successfully validated that pipeline.
-
 Recommended verification path (in order)
-
 CI / convergence sanity (C)
 Run the EOC/CI synthetic check to verify your environment and regression gates.
 
 One physics-style demo with PASS/FAIL (C)
 Run either:
-
 Double-slit demo (phase slope + visibility gates), or
-
 Spin-½ demo (FR sign flip + rotor spectrum fit gates).
 
 External Review Pack (C)
 Run the “external review pack” to validate:
-
 SCAN → REGION → REPORT artifacts,
-
 JSON schema compliance,
-
 and manifests/hashes for audit readiness.
 
 Repository structure
-
 Doc_01/ ... Doc_14/
 The full documentation set (each doc in its own folder).
-
 *_CLEANED.zip and runner bundles
 When a document has an executable verification component, the corresponding zipped runner bundle is included.
-
 Schemas/ (if present)
 JSON schemas for standardized artifacts (reports, scans, manifests).
-
 Artifact contract (what “verification” means here)
-
 Most runners produce a standard set of artifacts:
 
 COMPATIBILITY_SCAN_*.json
 A parameter sweep (grid/scan) with per-point metrics.
-
 EXISTENCE_REGION_*.json
 The PASS region extracted from the scan (mask/region geometry + thresholds).
-
 EXISTENCE_REPORT_*.json
 A single verdict + provenance (version, seed, gates, hashes).
 
 Typical verdict labels:
-
 natural — stable without “maintenance”
-
 maintained — stable only under explicit constraints/controls
 
 All packs include:
-
 SHA-256 manifests (checksums_SHA256.txt, etc.)
-
 PASS/FAIL gates with explicit thresholds
-
 (often) JSON schema validation
 
 What is (C) vs (P)?
-
 This repo uses a strict separation:
-
 (C) Convenience / CI / Synthetic
 
 Runs on CPU.
-
 Validates pipelines, regression checks, schemas, and audit trails.
-
 Does not claim physical validation by itself.
-
 (P) Physical / REAL
-
 Requires the real solver outputs (often GPU-scale).
-
 Intended to be run by third parties, then checked with the same verification pipelines.
 
 Minimal requirements
-
 Python 3.10+
-
 CPU-only is sufficient for the (C) packs.
-
 OS: Linux/macOS/Windows should work if Python dependencies install cleanly.
-
 Where to start (most user-friendly packs)
-
 If you only run one thing, run one of these:
-
 DoubleSlit_PACKAGE — verifies phase slope linearity and visibility monotonicity (PASS/FAIL).
-
 Spin / Appendix S pack — verifies FR 2π sign flip and rotor spectrum fit (PASS/FAIL).
 
 External Review Pack — verifies SCAN→REGION→REPORT with schema checks and manifests.
-
 (Each pack contains a README/HOW-TO-RUN plus verify_*.py scripts.)
 
-License
-
-MIT — see LICENSE.
-
 Notes for reviewers
-
 This repository is intentionally organized around external verifiability:
-
 deterministic seeds,
-
 explicit thresholds,
-
 hashes/manifests,
-
 and schema-validated outputs.
 
 If you want to contribute REAL (P) runs, the expected interface is:
-
 produce the same standardized artifacts from your run,
-
 then re-use the existing verifiers to check PASS/FAIL and provenance.
 
-::contentReference[oaicite:0]{index=0}
+
 
 Distributed under the **MIT License**. See the [LICENSE](./LICENSE) file.
 ## Author & Contact
