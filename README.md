@@ -10,8 +10,9 @@ The key idea is simple:
 - The project is organized so third parties can **verify pipelines** via **PASS/FAIL gates**, **hash manifests**, and **schema-validated artifacts**.
 
 > Important: many included datasets are **synthetic (C)** because this release is built to be verified on **CPU-only**.  
-> Physical end-to-end confirmation requires **REAL solver runs (P)**, which this repo is designed to accept as external inputs.
-
+> Physical end-to-end confirmation requires - **CI**: validates the verification pipeline on CPU-only synthetic/reference data (not physical validation).
+- **REAL-ready**: verifiers + artifact contract are in place; can consume third-party real-solver outputs.
+- **REAL-verified**: a real-solver run has been published with artifacts + hashes and passes the declared gates.
 ---
 
 ## Quickstart (3 minutes)
@@ -28,7 +29,7 @@ source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-2) Run one demo runner
+## 2) Run one demo runner
 
 Pick one of the “packs” below (recommended: Spin (Doc.5) or DoubleSlit (Doc.7)) and run its verify script.
 
@@ -141,11 +142,14 @@ hashes/manifests,
 
 and schema-validated outputs.
 
-If you want to contribute REAL (P) runs, the expected interface is:
+```md
+If you want to contribute REAL (P) runs, please follow this minimal contract:
 
-produce the same standardized artifacts from your run,
-
-then re-use the existing verifiers to check PASS/FAIL and provenance.
+- Export **SCAN / REGION / REPORT** artifacts using the same filename patterns used by the pack.
+- Include full **provenance** in SCAN metadata: solver version/hash, grid(s), Δt/CFL, BCs, seed(s), platform.
+- Provide **≥2 resolutions** for any physical claim (or an explicit pre-asymptotic analysis).
+- Include a **SHA-256 manifest** covering all exported files, and reference the exact **gate_id** used.
+- Gates must be **pre-registered** (locked before the solver run); post-hoc loosening is not allowed.
 
 Distributed under the MIT License. See the LICENSE
  file.
