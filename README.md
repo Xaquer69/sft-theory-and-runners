@@ -42,15 +42,4 @@ python3 verify_*.py
 
 If the verifier ends with GLOBAL_PASS = true, you successfully validated that pipeline.
 
-Recommended verification path (in order)
-CI / convergence sanity (C)
-Run the EOC/CI synthetic check to verify your environment and regression gates.
-One physics-style demo with PASS/FAIL (C)
-Run either:
-Double-slit demo (phase slope + visibility gates), or
-Spin-½ demo (FR sign flip + rotor spectrum fit gates).
-External Review Pack (C)
-Run the “external review pack” to validate:
-SCAN → REGION → REPORT artifacts,
-JSON schema compliance,
-and manifests/hashes for audit readiness.
+#Recommended verification path (in order)
