@@ -56,3 +56,13 @@ Run the “external review pack” to validate:
 SCAN → REGION → REPORT artifacts,
 JSON schema compliance,
 and manifests/hashes for audit readiness.
+
+## Repository structure
+Doc_01/ ... Doc_14/
+The full documentation set (each doc in its own folder).
+
+*_CLEANED.zip and runner bundles
+When a document has an executable verification component, the corresponding zipped runner bundle is included.
+
+Schemas/ (if present)
+JSON schemas for standardized artifacts (reports, scans, manifests).
