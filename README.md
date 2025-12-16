@@ -149,6 +149,9 @@ If you want to contribute REAL (P) runs, please follow this minimal contract:
 Distributed under the MIT License. See the LICENSE
  file.
 
+DOI:
+https://doi.org/10.5281/zenodo.17956400
+
 ## Author & Contact
 
 Francisco Queral Rallo
