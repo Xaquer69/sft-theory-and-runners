@@ -29,7 +29,7 @@ source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-## 2) Run one demo runner
+### 2) Run one demo runner
 
 Pick one of the “packs” below (recommended: Spin (Doc.5) or DoubleSlit (Doc.7)) and run its verify script.
 
@@ -45,19 +45,15 @@ If the verifier ends with GLOBAL_PASS = true, you successfully validated that pi
 
 ## Recommended verification path (in order)
 
-CI / convergence sanity (C)
-Run the EOC/CI (Doc.6) synthetic check to verify your environment and regression gates.
+1) **CI / convergence sanity (C)**  
+   Run the EOC/CI (Doc.6) synthetic check to verify your environment and regression gates.
 
-One physics-style demo with PASS/FAIL (C)
-Run either:
-Double-slit demo (Doc.7) (phase slope + visibility gates), or Spin-½ demo (Doc.5) (FR sign flip + rotor spectrum fit gates).
+2) **One physics-style demo with PASS/FAIL (C)**  
+   Run either: Double-slit (Doc.7) or Spin-½ (Doc.5).
 
-External Review Pack (C) (Doc.9)
-Run the “external review pack” to validate:
-SCAN → REGION → REPORT artifacts,
-JSON schema compliance,
-and manifests/hashes for audit readiness.
-
+3) **External Review Pack (C) (Doc.9)**  
+   Validate SCAN → REGION → REPORT artifacts, JSON schema compliance, and manifests/hashes for audit readiness.
+   
 ## Repository structure
 Doc_01/ ... Doc_14/
 The full documentation set (each doc in its own folder).
