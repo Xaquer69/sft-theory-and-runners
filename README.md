@@ -46,13 +46,13 @@ If the verifier ends with GLOBAL_PASS = true, you successfully validated that pi
 ## Recommended verification path (in order)
 
 CI / convergence sanity (C)
-Run the EOC/CI synthetic check to verify your environment and regression gates.
+Run the EOC/CI (Doc.6) synthetic check to verify your environment and regression gates.
 
 One physics-style demo with PASS/FAIL (C)
 Run either:
-Double-slit demo (phase slope + visibility gates), or Spin-½ demo (FR sign flip + rotor spectrum fit gates).
+Double-slit demo (Doc.7) (phase slope + visibility gates), or Spin-½ demo (Doc.5) (FR sign flip + rotor spectrum fit gates).
 
-External Review Pack (C)
+External Review Pack (C) (Doc.9)
 Run the “external review pack” to validate:
 SCAN → REGION → REPORT artifacts,
 JSON schema compliance,
@@ -121,11 +121,11 @@ OS: Linux/macOS/Windows should work if Python dependencies install cleanly.
 ## Where to start (most user-friendly packs)
 If you only run one thing, run one of these:
 
-DoubleSlit_PACKAGE — verifies phase slope linearity and visibility monotonicity (PASS/FAIL).
+DoubleSlit_PACKAGE — verifies phase slope linearity and visibility monotonicity (PASS/FAIL). (Doc.7).
 
-Spin / Appendix S pack — verifies FR 2π sign flip and rotor spectrum fit (PASS/FAIL).
+Spin / Appendix S pack — verifies FR 2π sign flip and rotor spectrum fit (PASS/FAIL). (Doc.5).
 
-External Review Pack — verifies SCAN→REGION→REPORT with schema checks and manifests.
+External Review Pack — verifies SCAN→REGION→REPORT with schema checks and manifests. (Doc.9).
 
 (Each pack contains a README/HOW-TO-RUN plus verify_*.py scripts.)
 
