@@ -55,7 +55,7 @@ If the verifier ends with GLOBAL_PASS = true, you successfully validated that pi
    Validate SCAN → REGION → REPORT artifacts, JSON schema compliance, and manifests/hashes for audit readiness.
    
 ## Repository structure
-Doc_01/ ... Doc_14/
+Doc_01/ ... Doc_15/
 The full documentation set (each doc in its own folder).
 
 *_CLEANED.zip and runner bundles
