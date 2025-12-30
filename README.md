@@ -10,7 +10,7 @@ The key idea is simple:
 - The project is organized so third parties can **verify pipelines** via **PASS/FAIL gates**, **hash manifests**, and **schema-validated artifacts**.
 
 > Important: many included datasets are **synthetic (C)** because this release is built to be verified on **CPU-only**.  
-> Physical end-to-end confirmation requires - **CI**: validates the verification pipeline on CPU-only synthetic/reference data (not physical validation).
+> Physical end-to-end confirmation requires REAL (P) solver outputs. CI only validates the verification pipeline (CPU-only), not physical validation.
 - **REAL-ready**: verifiers + artifact contract are in place; can consume third-party real-solver outputs.
 - **REAL-verified**: a real-solver run has been published with artifacts + hashes and passes the declared gates.
 ---
