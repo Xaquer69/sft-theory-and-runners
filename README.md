@@ -55,7 +55,8 @@ If the verifier ends with GLOBAL_PASS = true, you successfully validated that pi
    Validate SCAN → REGION → REPORT artifacts, JSON schema compliance, and manifests/hashes for audit readiness.
 
 4) **(Optional) Doc 15 — Alpha-Elasticity CI Suite (C)**
-   A CI/synthetic protocol for an alpha-like estimator (anti-leakage discipline, preregistered    decision rules + hashing, null/adversarial controls). Not    physical validation of α; included as a verification methodology appendix.
+   A CI/synthetic protocol for an alpha-like estimator (anti-leakage discipline, preregistered decision rules + hashing, null/adversarial controls).
+   Not physical validation of α; included as a verification methodology appendix.
    
 ## Repository structure
 Doc_01/ ... Doc_15/
