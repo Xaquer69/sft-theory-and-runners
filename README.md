@@ -160,4 +160,4 @@ https://doi.org/10.5281/zenodo.17956400
 
 Francisco Queral Rallo
 Murcia, España
-✉ franciscoqueralrallo@uoc-cs.com
+✉ xaviqueral@gmail.com
