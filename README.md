@@ -1,6 +1,6 @@
 # SFT — Structural Field Theory (Docs + Runners)
 
-This repository is a **verification-first** release of SFT: a theory/framework plus a set of **runners** designed for **external audit**.
+This repository is a **[verification-first](sft-theory-and-runners/0_SFT_Document0_Abstract_and_Orientation_UPDATED_with_10to15.pdf)** release of SFT: a theory/framework plus a set of **runners** designed for **external audit**.
 
 > **Start here:** read **[Doc 0 — Abstract & Orientation](sft-theory-and-runners/0_SFT_Document0_Abstract_and_Orientation_UPDATED_with_10to15.pdf)** for the ontological stance, scope, current limitations, and falsifiable predictions.
 
