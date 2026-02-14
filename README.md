@@ -2,7 +2,7 @@
 
 This repository is a **[verification-first](sft-theory-and-runners/SFT_Paper_Verification-First_Protocol_v0.2_DRAFT.docx.pdf)** release of SFT: a theory/framework plus a set of **runners** designed for **external audit**.
 
-> **Start here:** read **[Doc 0 — Abstract & Orientation](sft-theory-and-runners/0_SFT_Document0_Abstract_and_Orientation_UPDATED_with_10to15.pdf)** for the ontological stance, scope, current limitations, and falsifiable predictions.
+> **Start here:** read **[Doc 0 — Abstract & Orientation](sft-theory-and-runners/0_SFT_Document0_Abstract_and_Orientation_UPDATED_with_10to14.pdf)** for the ontological stance, scope, current limitations, and falsifiable predictions.
 
 The key idea is simple:
 - The “vacuum” is treated as a **structural medium/field**.
@@ -54,7 +54,7 @@ If the verifier ends with GLOBAL_PASS = true, you successfully validated that pi
 3) **External Review Pack (C) (Doc.9)**  
    Validate SCAN → REGION → REPORT artifacts, JSON schema compliance, and manifests/hashes for audit readiness.
 
-4) **(Optional) Doc 15 — Alpha-Elasticity CI Suite (C)**
+4) **(Optional) Doc 10.1 — Alpha-Elasticity CI Suite (C)**
    A CI/synthetic protocol for an alpha-like estimator (anti-leakage discipline, preregistered decision rules + hashing, null/adversarial controls).
    Not physical validation of α; included as a verification methodology appendix.
 
@@ -62,7 +62,7 @@ If the verifier ends with GLOBAL_PASS = true, you successfully validated that pi
    includes External Break Test #01 (field rescaling) as a Doc9/Doc15-style anti-post-hoc audit protocol.
    
 ## Repository structure
-Doc_01/ ... Doc_15/
+Doc_01/ ... Doc_14/
 The full documentation set (each doc in its own folder).
 
 *_CLEANED.zip and runner bundles
