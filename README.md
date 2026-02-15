@@ -59,7 +59,7 @@ If the verifier ends with GLOBAL_PASS = true, you successfully validated that pi
    Not physical validation of α; included as a verification methodology appendix.
 
 5) **(Optional) Doc 8 - Limitations and Validation Plan**
-   includes External Break Test #01 (field rescaling) as a Doc9/Doc15-style anti-post-hoc audit protocol.
+   includes External Break Test #01 (field rescaling) as a Doc9/Doc10.1-style anti-post-hoc audit protocol.
    
 ## Repository structure
 Doc_01/ ... Doc_14/
