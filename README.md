@@ -2,7 +2,7 @@
 
 This repository is a **[verification-first](sft-theory-and-runners/SFT_Paper_Verification-First_Protocol_v0.2_DRAFT.docx.pdf)** release of SFT: a theory/framework plus a set of **runners** designed for **external audit**.
 
-> **Start here:** read **[Doc 0 — Abstract & Orientation](sft-theory-and-runners/0_SFT_Document0_Abstract_and_Orientation_UPDATED_with_10to14.pdf)** for the ontological stance, scope, current limitations, and falsifiable predictions.
+> **Start here:** read **[Doc 0 — Abstract & Orientation](sft-theory-and-runners/11_OnePager_DesignedMatter_SFT_UPDATED)** for the ontological stance, scope, current limitations, and falsifiable predictions.
 
 The key idea is simple:
 - The “vacuum” is treated as a **structural medium/field**.
