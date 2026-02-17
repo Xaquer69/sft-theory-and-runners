@@ -1,6 +1,6 @@
 # SFT — Designed Matter via Tensional Compatibility
 
-Tagline: If stability is compatibility with the medium, then matter can be designed **[DOC_0 The stability of a configuration is not intrinsic to the object, but emerges from its tensional compatibility with the medium](sft-theory-and_runners/0_SFT_Documento_0_Resumen_y_Orientación_ACTUALIZADO_con_10a14.pdf)** Release of SFT: a theory/framework plus a set of **runners** designed for **external audit**.
+Tagline: If stability is compatibility with the medium, then matter can be designed **[DOC_0 The stability of a configuration is not intrinsic to the object, but emerges from its tensional compatibility with the medium](sft-theory-and_runners/0_SFT_Document0_Abstract_and_Orientation_UPDATED_with_10to14.pdf)** Release of SFT: a theory/framework plus a set of **runners** designed for **external audit**.
 
 > **Start here:** read **[Doc.11_OnePager_DesignedMatter_SFT_UPDATED.pdf](/11_OnePager_DesignedMatter_SFT_UPDATED.pdf)** for the ontological stance, scope, current limitations, and falsifiable predictions.
 
