@@ -27,11 +27,7 @@ source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-### 2) Run one demo runner
-
-Pick one of the “packs” below (recommended: Spin (Doc.5) or DoubleSlit (Doc.7)) and run its verify script.
-
-Example pattern (adjust the path to the pack you choose):
+### 2) Example pattern (adjust the path to the pack you choose):
 
 ```bash
 cd <PATH_TO_A_PACK>
@@ -39,29 +35,9 @@ sha256sum -c checksums_SHA256.txt
 python3 verify_*.py
 ```
 
-If the verifier ends with GLOBAL_PASS = true, you successfully validated that pipeline.
+## Recommended verification path:
 
-## Recommended verification path (in order)
-
-1) **CI / convergence sanity (C)**  
-   Run the EOC/CI (Doc.6) synthetic check to verify your environment and regression gates.
-
-2) **One physics-style demo with PASS/FAIL (C)**  
-   Run either: Double-slit (Doc.7) or Spin-½ (Doc.5).
-
-3) **External Review Pack (C) (Doc.9)**  
-   Validate SCAN → REGION → REPORT artifacts, JSON schema compliance, and manifests/hashes for audit readiness.
-
-4) **(Optional) Doc 10.1 — Alpha-Elasticity CI Suite (C)**
-   A CI/synthetic protocol for an alpha-like estimator (anti-leakage discipline, preregistered decision rules + hashing, null/adversarial controls).
-   Not physical validation of α; included as a verification methodology appendix.
-
-5) **(Optional) Doc 8 - Limitations and Validation Plan**
-   includes External Break Test #01 (field rescaling) as a Doc9/Doc10.1-style anti-post-hoc audit protocol.
-   
-## Repository structure
-Doc_01/ ... Doc_14/
-The full documentation set (each doc in its own folder).
+1) **Atom X**  
 
 *_CLEANED.zip and runner bundles
 When a document has an executable verification component, the corresponding zipped runner bundle is included.
