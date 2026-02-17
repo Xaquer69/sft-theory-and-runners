@@ -95,18 +95,6 @@ CPU-only is sufficient for the (C) packs.
 
 OS: Linux/macOS/Windows should work if Python dependencies install cleanly.
 
-## Where to start (most user-friendly packs)
-If you only run one thing, run one of these:
-
-DoubleSlit_PACKAGE — verifies phase slope linearity and visibility monotonicity (PASS/FAIL). (Doc.7).
-
-Spin / Appendix S pack — verifies FR 2π sign flip and rotor spectrum fit (PASS/FAIL). (Doc.5).
-
-External Review Pack — verifies SCAN→REGION→REPORT with schema checks and manifests. (Doc.9).
-
-(Each pack contains a README/HOW-TO-RUN plus verify_*.py scripts.)
-
-
 ## Notes for reviewers
 
 This repository is intentionally organized around external verifiability:
