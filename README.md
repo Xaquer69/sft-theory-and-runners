@@ -1,4 +1,4 @@
-# SFT — Structural Field Theory (Docs + Runners)
+# SFT — Designed Matter via Tensional Compatibility
 
 This repository is a **[verification-first](sft-theory-and_runners/0_SFT_Documento_0_Resumen_y_Orientación_ACTUALIZADO_con_10a14.pdf)** release of SFT: a theory/framework plus a set of **runners** designed for **external audit**.
 
