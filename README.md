@@ -153,6 +153,10 @@ If you want to contribute REAL (P) runs, please follow this minimal contract:
 - Include a **SHA-256 manifest** covering all exported files, and reference the exact **gate_id** used.
 - Gates must be **pre-registered** (locked before the solver run); post-hoc loosening is not allowed.
 
+## Designed Matter via Tensional Compatibility
+Click here:
+https://github.com/Xaquer69/sft-theory-and-runners/tree/Designed-Matter-via-Tensional-Compatibility-(SFT)
+
 Distributed under the MIT License. See the LICENSE
  file.
 
