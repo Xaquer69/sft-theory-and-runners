@@ -162,6 +162,7 @@ Distributed under the MIT License. See the LICENSE
 
 DOI:
 https://doi.org/10.5281/zenodo.18648618
+
 Reproducible Physics:
 https://zenodo.org/communities/reproducible_physics/records
 
@@ -170,4 +171,5 @@ https://zenodo.org/communities/reproducible_physics/records
 Francisco Queral Rallo
 Murcia, España
 ✉ xaviqueral@gmail.com
+
 ORCID https://orcid.org/0009-0006-5326-0537
