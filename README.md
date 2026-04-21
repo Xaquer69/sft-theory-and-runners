@@ -162,6 +162,8 @@ Distributed under the MIT License. See the LICENSE
 
 DOI:
 https://doi.org/10.5281/zenodo.18648618
+Reproducible Physics:
+https://zenodo.org/communities/reproducible_physics/records
 
 ## Author & Contact
 
