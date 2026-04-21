@@ -168,3 +168,4 @@ https://doi.org/10.5281/zenodo.18648618
 Francisco Queral Rallo
 Murcia, España
 ✉ xaviqueral@gmail.com
+ORCID https://orcid.org/0009-0006-5326-0537
