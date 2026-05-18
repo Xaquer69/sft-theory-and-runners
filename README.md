@@ -61,6 +61,9 @@ If the verifier ends with GLOBAL_PASS = true, you successfully validated that pi
 5) **(Optional) Doc 8 - Limitations and Validation Plan**
    includes External Break Test #01 (field rescaling) as a Doc9/Doc10.1-style anti-post-hoc audit protocol.
    
+6) **(Optional) Doc 14 - Capstone (Unified v6c)**
+   Includes Firedrake/UFL external bridge [CI/exploratory]: a reference executable mini-pack implementing selected scalar-field equations, benchmarks, and exploratory diagnostics in a non-native PDE/FEM environment. Its purpose is not to reproduce the full SFT corpus externally, but to provide an auditable bridge for inspecting parts of the framework outside the native SFT runner ecosystem.
+
 ## Repository structure
 Doc_01/ ... Doc_14/
 The full documentation set (each doc in its own folder).
