@@ -49,7 +49,7 @@ If the verifier ends with GLOBAL_PASS = true, you successfully validated that pi
    Run the EOC/CI (Doc.6) synthetic check to verify your environment and regression gates.
 
 2) **One physics-style demo with PASS/FAIL (C)**  
-   Run either: Double-slit (Doc.7) or Spin-½ (Doc.5).
+   Run either: Double-slit (Doc.7_1) or Spin-½ (Doc.5).
 
 3) **External Review Pack (C) (Doc.9)**  
    Validate SCAN → REGION → REPORT artifacts, JSON schema compliance, and manifests/hashes for audit readiness.
