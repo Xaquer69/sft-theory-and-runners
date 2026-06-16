@@ -2,6 +2,34 @@
 
 This repository is a **[verification-first](sft-theory-and-runners/SFT_Paper_Verification-First_Protocol_v0.2_DRAFT.docx.pdf)** release of SFT: a theory/framework plus a set of **runners** designed for **external audit**.
 
+## Update — Firedrake/UFL exploratory bridge outputs
+
+**Update date:** 2026-06-16
+
+This repository now includes `SFT_FIREDRAKE_CORE_REPRO_v0_1_8`, an exploratory Firedrake/UFL real-solver bridge package.
+
+This package adds external PDE/FEM bridge outputs for selected SFT-facing audit targets, including:
+
+* spin-½ FR bend robustness signatures,
+* hydrogenic radial Coulomb H/T 2s/2p gates,
+* Venus and Mercury 1PN perihelion geometry gates,
+* alpha-localization capacity scans,
+* double-slit Firedrake phase/visibility diagnostics,
+* and an intentionally incomplete Alpha-Out bridge report.
+
+These Firedrake/UFL outputs are stronger than synthetic CI checks because they are produced in an external real-solver environment and exported as auditable JSON/CSV artifacts with SHA-256 manifests and PASS/FAIL gates.
+
+They are **not** presented as global physical validation of SFT, nor as derivations of the Standard Model or General Relativity. They should be read as an **exploratory P-bridge**: real-solver bridge outputs that exercise the verification-first contract, while still requiring independent third-party REAL runs at multiple resolutions for physical confirmation.
+
+Evidence labels used in this repository:
+
+* **CI (C):** CPU-only validation of tooling, schemas, manifests, regression checks, and PASS/FAIL logic.
+* **REAL-ready (P-input):** verifier and artifact contract are ready to ingest third-party real-solver outputs.
+* **Exploratory P-bridge:** real-solver bridge outputs produced in an external solver environment, with hashes and machine-checkable reports, but not yet independently replicated.
+* **REAL-verified (P):** reserved for independent third-party real-solver runs with artifacts, hashes, locked gates, and at least two resolutions.
+
+
+
 > **Start here:** read **[Doc 0 — Abstract & Orientation](sft-theory-and-runners/0_SFT_Document0_Abstract_and_Orientation_UPDATED_with_10to14.pdf)** for the ontological stance, scope, current limitations, and falsifiable predictions.
 
 The key idea is simple:
