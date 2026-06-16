@@ -91,6 +91,8 @@ If the verifier ends with GLOBAL_PASS = true, you successfully validated that pi
    
 6) **(Optional) Doc 14 - Capstone (Unified v6c)**
    Includes Firedrake/UFL external bridge [CI/exploratory]: a reference executable mini-pack implementing selected scalar-field equations, benchmarks, and exploratory diagnostics in a non-native PDE/FEM environment. Its purpose is not to reproduce the full SFT corpus externally, but to provide an auditable bridge for inspecting parts of the framework outside the native SFT runner ecosystem.
+   
+Optional Firedrake/UFL bridge path: inspect or run `SFT_FIREDRAKE_CORE_REPRO_v0_1_8` to verify the exploratory real-solver bridge reports for spin FR, radial H/T Coulomb, Venus/Mercury perihelion gates, double-slit MIXED/HOLD, and Alpha-Out INCOMPLETE.
 
 ## Repository structure
 Doc_01/ ... Doc_14/
