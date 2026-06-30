@@ -6,27 +6,36 @@ This repository is a **[verification-first](sft-theory-and-runners/SFT_preprint_
 
 **Update date:** 2026-06-16
 
-This repository now includes `SFT_FIREDRAKE_CORE_REPRO_v0_1_8`, an exploratory Firedrake/UFL real-solver bridge package.
+This repository now includes `SFT_FIREDRAKE_CORE_REPRO_v0_1_10`, an exploratory Firedrake/UFL real-solver bridge package, together with the `v0_1_11` S-compliance addendum.
 
 This package adds external PDE/FEM bridge outputs for selected SFT-facing audit targets, including:
 
 * spin-½ FR bend robustness signatures,
+* scalar recovery/residue controls and spin/topological-memory diagnostics,
 * hydrogenic radial Coulomb H/T 2s/2p gates,
 * Venus and Mercury 1PN perihelion geometry gates,
 * alpha-localization capacity scans,
 * double-slit Firedrake phase/visibility diagnostics,
+* double-slit Born-readout diagnostics,
+* exploratory alpha-thread proxy gates,
+* an exploratory S-rigidity compliance-window scan,
 * and an intentionally incomplete Alpha-Out bridge report.
 
-These Firedrake/UFL outputs are stronger than synthetic CI checks because they are produced in an external real-solver environment and exported as auditable JSON/CSV artifacts with SHA-256 manifests and PASS/FAIL gates.
+The `v0_1_10` package consolidates the Firedrake/UFL bridge suite, including spin/topological memory, radial and perihelion sanity gates, recovery/residue controls, double-slit Born readout, and exploratory alpha-thread proxy gates.
 
-They are **not** presented as global physical validation of SFT, nor as derivations of the Standard Model or General Relativity. They should be read as an **exploratory P-bridge**: real-solver bridge outputs that exercise the verification-first contract, while still requiring independent third-party REAL runs at multiple resolutions for physical confirmation.
+The `v0_1_11` addendum adds a focused S-rigidity compliance landscape: a fixed-physical-time scan mapping a bounded medium regime between rupture and persistent scalar residue under locked gates. This S-compliance landscape is not an alpha result, not a particle-identification result, and not a global physical validation of SFT.
+
+These Firedrake/UFL outputs are stronger than synthetic CI checks because they are produced in an external real-solver environment and exported as auditable JSON/CSV artifacts with SHA-256 manifests and machine-checkable PASS/FAIL gates.
+
+They are not presented as global physical validation of SFT, nor as derivations of the Standard Model, General Relativity, Born's rule, the electron/photon, or the physical fine-structure constant. They should be read as exploratory P-bridge outputs: real-solver bridge results that exercise the verification-first contract, while still requiring independent third-party REAL runs at multiple resolutions for physical confirmation.
 
 Evidence labels used in this repository:
 
-* **CI (C):** CPU-only validation of tooling, schemas, manifests, regression checks, and PASS/FAIL logic.
-* **REAL-ready (P-input):** verifier and artifact contract are ready to ingest third-party real-solver outputs.
-* **Exploratory P-bridge:** real-solver bridge outputs produced in an external solver environment, with hashes and machine-checkable reports, but not yet independently replicated.
-* **REAL-verified (P):** reserved for independent third-party real-solver runs with artifacts, hashes, locked gates, and at least two resolutions.
+* `CI (C)`: CPU-only validation of tooling, schemas, manifests, regression checks, and PASS/FAIL logic.
+* `REAL-ready (P-input)`: verifier and artifact contract are ready to ingest third-party real-solver outputs.
+* `Exploratory P-bridge`: real-solver bridge outputs produced in an external solver environment, with hashes and machine-checkable reports, but not yet independently replicated.
+* `REAL-verified (P)`: reserved for independent third-party real-solver runs with artifacts, hashes, locked gates, and at least two resolutions.
+
 
 -----------------------------------------------------------------------------------------------
 
