@@ -1,6 +1,6 @@
 # SFT — Structural Field Theory (Docs + Runners)
 
-This repository is a **[verification-first](sft-theory-and-runners/SFT_Paper_Verification-First_Protocol_v0.3_FIREDRAKE_REVIEWER_SAFE_EDIT.pdf)** release of SFT: a theory/framework plus a set of **runners** designed for **external audit**.
+This repository is a **[verification-first](sft-theory-and-runners/SFT_preprint_Firedrake_v0_1_11.pdf)** release of SFT: a theory/framework plus a set of **runners** designed for **external audit**.
 
 ## Update — Firedrake/UFL exploratory bridge outputs
 
