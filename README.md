@@ -25,17 +25,17 @@ These FEM bridge outputs are more informative than synthetic CI checks because t
 
 They are not presented as global physical validation of SFT, nor as derivations of the Standard Model, General Relativity, Born's rule, the electron/photon, the physical fine-structure constant, or matter programmability. They should be read as exploratory P-bridge outputs: real-solver bridge results that exercise the verification-first contract, while still requiring independent third-party REAL runs at multiple resolutions for physical confirmation.
 
-Evidence labels used in this repository:
+## Evidence labels used in this repository:
 
-CI (C): CPU-only validation of tooling, schemas, manifests, regression checks, and PASS/FAIL logic.
+- CI (C): CPU-only validation of tooling, schemas, manifests, regression checks, and PASS/FAIL logic.
 
-REAL-ready (P-input): verifier and artifact contract are ready to ingest third-party real-solver outputs.
+- REAL-ready (P-input): verifier and artifact contract are ready to ingest third-party real-solver outputs.
 
-Exploratory P-bridge: real-solver bridge outputs produced in an external solver environment, with hashes and machine-checkable reports, but not yet independently replicated.
+- Exploratory P-bridge: real-solver bridge outputs produced in an external solver environment, with hashes and machine-checkable reports, but not yet independently replicated.
 
-Cross-backend exploratory bridge: selected audit targets represented across Firedrake/UFL and FEniCSx/DOLFINx, strengthening implementation transparency without constituting physical confirmation.
+- Cross-backend exploratory bridge: selected audit targets represented across Firedrake/UFL and FEniCSx/DOLFINx, strengthening implementation transparency without constituting physical confirmation.
 
-REAL-verified (P): reserved for independent third-party real-solver runs with artifacts, hashes, locked gates, and at least two resolutions.
+- REAL-verified (P): reserved for independent third-party real-solver runs with artifacts, hashes, locked gates, and at least two resolutions.
 
 -----------------------------------------------------------------------------------------------
 
