@@ -2,39 +2,36 @@
 
 This repository is a **[verification-first](sft-theory-and-runners/SFT_preprint_Firedrake_v0_1_11.pdf)** release of SFT: a theory/framework plus a set of **runners** designed for **external audit**.
 
-## Update — Firedrake/UFL exploratory bridge outputs
+## Update — FEM cross-backend exploratory bridge outputs
 
-**Update date:** 2026-06-16
+Update date: 2026-07-07
 
-This repository now includes `SFT_FIREDRAKE_CORE_REPRO_v0_1_10`, an exploratory Firedrake/UFL real-solver bridge package, together with the `v0_1_11` S-compliance addendum.
+This repository now includes SFT_FEM_CROSSBACKEND_REPRO_v0_1_12, an exploratory FEM cross-backend bridge package for selected SFT-facing audit targets.
 
-This package adds external PDE/FEM bridge outputs for selected SFT-facing audit targets, including:
+The previous Firedrake/UFL bridge line is preserved through SFT_FIREDRAKE_CORE_REPRO_v0_1_10 and the v0_1_11 S-compliance addendum. The new v0_1_12 package adds an independent FEniCSx/DOLFINx bridge layer for compatibility, native collapse, spin FR, double-slit readout, and Mercury/Venus perihelion gates.
 
-* spin-½ FR bend robustness signatures,
-* scalar recovery/residue controls and spin/topological-memory diagnostics,
-* hydrogenic radial Coulomb H/T 2s/2p gates,
-* Venus and Mercury 1PN perihelion geometry gates,
-* alpha-localization capacity scans,
-* double-slit Firedrake phase/visibility diagnostics,
-* double-slit Born-readout diagnostics,
-* exploratory alpha-thread proxy gates,
-* an exploratory S-rigidity compliance-window scan,
-* and an intentionally incomplete Alpha-Out bridge report.
+This repository therefore now contains selected SFT-facing audit targets implemented across two FEM environments:
 
-The `v0_1_10` package consolidates the Firedrake/UFL bridge suite, including spin/topological memory, radial and perihelion sanity gates, recovery/residue controls, double-slit Born readout, and exploratory alpha-thread proxy gates.
+Firedrake/UFL bridge outputs for spin-½ FR bend robustness, spin/topological memory, scalar recovery/residue controls, hydrogenic radial Coulomb H/T 2s/2p gates, Venus/Mercury 1PN perihelion geometry gates, alpha-localization capacity scans, double-slit phase/visibility diagnostics, double-slit Born-readout diagnostics, exploratory alpha-thread proxy gates, an exploratory S-rigidity compliance-window scan, and an intentionally incomplete Alpha-Out bridge report.
+FEniCSx/DOLFINx bridge outputs for the compatibility operator, native collapse gate, spin-½ FR signature, double-slit phase/visibility/Born-readout diagnostics, and Mercury/Venus 1PN perihelion gates.
 
-The `v0_1_11` addendum adds a focused S-rigidity compliance landscape: a fixed-physical-time scan mapping a bounded medium regime between rupture and persistent scalar residue under locked gates. This S-compliance landscape is not an alpha result, not a particle-identification result, and not a global physical validation of SFT.
+The v0_1_10 package consolidates the Firedrake/UFL bridge suite, including spin/topological memory, radial and perihelion sanity gates, recovery/residue controls, double-slit Born readout, and exploratory alpha-thread proxy gates.
 
-These Firedrake/UFL outputs are stronger than synthetic CI checks because they are produced in an external real-solver environment and exported as auditable JSON/CSV artifacts with SHA-256 manifests and machine-checkable PASS/FAIL gates.
+The v0_1_11 addendum adds a focused S-rigidity compliance landscape: a fixed-physical-time scan mapping a bounded medium regime between rupture and persistent scalar residue under locked gates. This S-compliance landscape is not an alpha result, not a particle-identification result, and not a global physical validation of SFT.
 
-They are not presented as global physical validation of SFT, nor as derivations of the Standard Model, General Relativity, Born's rule, the electron/photon, or the physical fine-structure constant. They should be read as exploratory P-bridge outputs: real-solver bridge results that exercise the verification-first contract, while still requiring independent third-party REAL runs at multiple resolutions for physical confirmation.
+The v0_1_12 cross-backend package adds an independent FEniCSx/DOLFINx implementation layer. It supports the narrower claim that selected SFT-facing compatibility, collapse, topological, readout, and geometry gates can be represented reproducibly in both Firedrake/UFL and FEniCSx/DOLFINx under declared protocols.
+
+These FEM bridge outputs are more informative than synthetic CI checks because they are produced in external real-solver environments and exported as auditable JSON/CSV artifacts with SHA-256 manifests and machine-checkable PASS/FAIL gates.
+
+They are not presented as global physical validation of SFT, nor as derivations of the Standard Model, General Relativity, Born's rule, the electron/photon, the physical fine-structure constant, or matter programmability. They should be read as exploratory P-bridge outputs: real-solver bridge results that exercise the verification-first contract, while still requiring independent third-party REAL runs at multiple resolutions for physical confirmation.
 
 Evidence labels used in this repository:
 
-* `CI (C)`: CPU-only validation of tooling, schemas, manifests, regression checks, and PASS/FAIL logic.
-* `REAL-ready (P-input)`: verifier and artifact contract are ready to ingest third-party real-solver outputs.
-* `Exploratory P-bridge`: real-solver bridge outputs produced in an external solver environment, with hashes and machine-checkable reports, but not yet independently replicated.
-* `REAL-verified (P)`: reserved for independent third-party real-solver runs with artifacts, hashes, locked gates, and at least two resolutions.
+CI (C): CPU-only validation of tooling, schemas, manifests, regression checks, and PASS/FAIL logic.
+REAL-ready (P-input): verifier and artifact contract are ready to ingest third-party real-solver outputs.
+Exploratory P-bridge: real-solver bridge outputs produced in an external solver environment, with hashes and machine-checkable reports, but not yet independently replicated.
+Cross-backend exploratory bridge: selected audit targets represented across Firedrake/UFL and FEniCSx/DOLFINx, strengthening implementation transparency without constituting physical confirmation.
+REAL-verified (P): reserved for independent third-party real-solver runs with artifacts, hashes, locked gates, and at least two resolutions.
 
 -----------------------------------------------------------------------------------------------
 
