@@ -10,10 +10,11 @@ This repository now includes SFT_FEM_CROSSBACKEND_REPRO_v0_1_12, an exploratory 
 
 The previous Firedrake/UFL bridge line is preserved through SFT_FIREDRAKE_CORE_REPRO_v0_1_10 and the v0_1_11 S-compliance addendum. The new v0_1_12 package adds an independent FEniCSx/DOLFINx bridge layer for compatibility, native collapse, spin FR, double-slit readout, and Mercury/Venus perihelion gates.
 
-This repository therefore now contains selected SFT-facing audit targets implemented across two FEM environments:
+### This repository therefore now contains selected SFT-facing audit targets implemented across two FEM environments:
 
-Firedrake/UFL bridge outputs for spin-½ FR bend robustness, spin/topological memory, scalar recovery/residue controls, hydrogenic radial Coulomb H/T 2s/2p gates, Venus/Mercury 1PN perihelion geometry gates, alpha-localization capacity scans, double-slit phase/visibility diagnostics, double-slit Born-readout diagnostics, exploratory alpha-thread proxy gates, an exploratory S-rigidity compliance-window scan, and an intentionally incomplete Alpha-Out bridge report.
-FEniCSx/DOLFINx bridge outputs for the compatibility operator, native collapse gate, spin-½ FR signature, double-slit phase/visibility/Born-readout diagnostics, and Mercury/Venus 1PN perihelion gates.
+- Firedrake/UFL bridge outputs for spin-½ FR bend robustness, spin/topological memory, scalar recovery/residue controls, hydrogenic radial Coulomb H/T 2s/2p gates, Venus/Mercury 1PN perihelion geometry gates, alpha-localization capacity scans, double-slit phase/visibility diagnostics, double-slit Born-readout diagnostics, exploratory alpha-thread proxy gates, an exploratory S-rigidity compliance-window scan, and an intentionally incomplete Alpha-Out bridge report.
+  
+- FEniCSx/DOLFINx bridge outputs for the compatibility operator, native collapse gate, spin-½ FR signature, double-slit phase/visibility/Born-readout diagnostics, and Mercury/Venus 1PN perihelion gates.
 
 The v0_1_10 package consolidates the Firedrake/UFL bridge suite, including spin/topological memory, radial and perihelion sanity gates, recovery/residue controls, double-slit Born readout, and exploratory alpha-thread proxy gates.
 
