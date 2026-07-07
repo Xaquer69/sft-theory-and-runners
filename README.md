@@ -25,7 +25,7 @@ These FEM bridge outputs are more informative than synthetic CI checks because t
 
 They are not presented as global physical validation of SFT, nor as derivations of the Standard Model, General Relativity, Born's rule, the electron/photon, the physical fine-structure constant, or matter programmability. They should be read as exploratory P-bridge outputs: real-solver bridge results that exercise the verification-first contract, while still requiring independent third-party REAL runs at multiple resolutions for physical confirmation.
 
-# Evidence labels used in this repository:
+### Evidence labels used in this repository:
 
 - CI (C): CPU-only validation of tooling, schemas, manifests, regression checks, and PASS/FAIL logic.
 
