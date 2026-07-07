@@ -1,6 +1,6 @@
 # SFT — Structural Field Theory (Docs + Runners)
 
-This repository is a **[verification-first](sft-theory-and-runners/SFT_preprint_Firedrake_v0_1_11.pdf)** release of SFT: a theory/framework plus a set of **runners** designed for **external audit**.
+This repository is a **[verification-first](sft-theory-and-runners/SFT_preprint_FEM_crossbackend_v0_1_12.pdf)** release of SFT: a theory/framework plus a set of **runners** designed for **external audit**.
 
 ## Update — FEM cross-backend exploratory bridge outputs
 
