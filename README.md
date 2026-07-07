@@ -36,6 +36,7 @@ Exploratory P-bridge: real-solver bridge outputs produced in an external solver 
 Cross-backend exploratory bridge: selected audit targets represented across Firedrake/UFL and FEniCSx/DOLFINx, strengthening implementation transparency without constituting physical confirmation.
 
 REAL-verified (P): reserved for independent third-party real-solver runs with artifacts, hashes, locked gates, and at least two resolutions.
+
 -----------------------------------------------------------------------------------------------
 
 > **Start here:** read **[Doc 0 — Abstract & Orientation](sft-theory-and-runners/0_SFT_Document0_Abstract_and_Orientation_UPDATED_with_10to14.pdf)** for the ontological stance, scope, current limitations, and falsifiable predictions.
